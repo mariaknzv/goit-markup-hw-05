@@ -641,7 +641,6 @@ img {
     background: #4D5AE5;
     border-radius: 4px;
     border: none;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -964,7 +963,7 @@ img {
     border-color: #4D5AE5;
 }
 
-.check-text {
+.check-label {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -974,19 +973,18 @@ img {
     margin-bottom: 24px;
 }
 
-.check-text a {
+.check-label a {
     color: #4D5AE5;
     text-decoration: underline;
     margin-left: 3px;
 }
 
-.check-text-span {
+.check-span {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     margin-right: 8px;
-    display: flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -994,7 +992,7 @@ img {
     display: inline-flex;
 }
 
-.input-check:checked+.check-text-span {
+.input-check:checked+.check-label>span {
     background-color: #404BBF;
     border: 1px solid #404BBF;
     fill: #F4F4FD;
