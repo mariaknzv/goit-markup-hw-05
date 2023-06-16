@@ -635,7 +635,8 @@ img {
 }
 
 .footer-sub-btn {
-    width: 165px;
+    font-family: "Roboto", sans-serif;
+    min-width: 165px;
     height: 40px;
     background: #4D5AE5;
     border-radius: 4px;
@@ -650,10 +651,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-
-
-
+    cursor: pointer;
 }
 
 .footer-sub-form {
@@ -666,6 +664,7 @@ img {
 
 .footer-icon-subscribe {
     fill: var(--title-color-light);
+    margin-left: 16px;
 }
 
 /*----------PORTFOLIO----------*/
@@ -809,7 +808,6 @@ img {
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
 }
 
 .modal {
@@ -823,7 +821,7 @@ img {
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
 
 }
 
@@ -874,12 +872,19 @@ img {
     letter-spacing: 0.02em;
     color: var(--title-color-dark);
     max-width: 360px;
-    margin-top: 48px;
     margin-bottom: 16px;
 }
 
 .modal-field {
     margin-bottom: 8px;
+}
+
+.modal-field-comment {
+    margin-bottom: 16px;
+}
+
+.modal-field-check {
+    margin-bottom: 24px;
 }
 
 .modal-input {
@@ -896,7 +901,7 @@ img {
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     outline: transparent;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -910,8 +915,6 @@ img {
     color: #8E8F99;
     margin-bottom: 4px;
     display: block;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 
 }
 
@@ -949,6 +952,10 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-textarea:focus {
+    border-color: #4D5AE5;
+}
+
 .modal-textarea::placeholder {
     font-size: 12px;
     line-height: 1.17;
@@ -973,7 +980,7 @@ img {
     margin-left: 3px;
 }
 
-.check-text span {
+.check-text-span {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -983,13 +990,18 @@ img {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
 }
 
-.input-check:checked+.check-text span {
+.input-check:checked+.check-text-span {
     background-color: #404BBF;
     border: 1px solid #404BBF;
     fill: #F4F4FD;
+    border: none;
 }
+
+.chechbox-link {}
 
 .modal-botton-send {
     font-weight: 500;
@@ -1004,7 +1016,8 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    min-width: 169px height: 56px;
+    min-width: 169px;
+    height: 56px;
     cursor: pointer;
     margin: 0 auto;
     display: block;
