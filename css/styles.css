@@ -657,6 +657,7 @@ img {
 .footer-sub-form {
     display: flex;
     flex-direction: row;
+    gap: 24px;
 
 
 }
