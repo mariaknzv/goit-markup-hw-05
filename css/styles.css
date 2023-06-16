@@ -979,7 +979,7 @@ img {
     margin-left: 3px;
 }
 
-.check-span {
+.check-block {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -992,7 +992,7 @@ img {
     display: inline-flex;
 }
 
-.input-check:checked+.check-label>span {
+.input-check:checked+.check-label>.check-block {
     background-color: #404BBF;
     border: 1px solid #404BBF;
     fill: #F4F4FD;
